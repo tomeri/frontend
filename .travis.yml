@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true tomaskelemen/frontend npm run test
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-west-1"
   app: "docker-react"
